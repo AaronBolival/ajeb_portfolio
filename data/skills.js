@@ -24,5 +24,9 @@ const skills = [
     "ECC",
     "Power BI",
     "Power Apps",
-    "Power Automate"
+    "Power Automate",
+    "SQL",
+    "CSS",
+    "Bootstrap",
+    "Material UI"
 ];
