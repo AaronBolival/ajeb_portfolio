@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     renderSkills();
+    renderSoftSkills();
     renderProjects("projectsContainer", 3);
     renderProjects("allProjectsContainer");
     renderCertificates("certificatesContainer", 3);
@@ -352,4 +353,45 @@ function renderCertificates(containerId, limit){
             </div>
         </div>
     `).join("");
+}
+
+
+function renderSoftSkills(){
+    const container = document.getElementById("strengthsContainer");
+    if(!container || typeof softskills === "undefined") return;
+    container.innerHTML = softskills.map(softskill => 
+    { 
+            if( softskill.hidden === "true")
+                { return ""; } 
+            return `
+
+                    <h2 class="section-title">${softskill.title}</h2>
+  
+
+                        ${
+                            softskill.itemDetails.map(detail => {
+                                if (detail.hidden === "true") {
+                                    return "";
+                                }
+
+                                return `
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="strength-card h-100">
+
+                                            <div class="strength-icon">
+                                                <i class="bi ${detail.icon}"></i>
+                                            </div>
+
+                                            <h4>${detail.title}</h4>
+
+                                            <p>${detail.description}</p>
+
+                                        </div>
+                                    </div>                                    
+                                `;
+                            }).join("")
+                        } 
+
+
+    `}).join("");
 }

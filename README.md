@@ -4,10 +4,11 @@ Static portfolio website using HTML, CSS, Bootstrap CDN, and JavaScript.
 
 ## Editable data files
 
-- `data/projects.js` - update skills and projects here
+- `data/projects.js` - update projects here
 - `data/certificates.js` - update certificates here
-- `data/experience.js` - update certificates here
-- `data/skills.js` - update certificates here
+- `data/experience.js` - update experience here
+- `data/skills.js` - update skills here
+- `data/softskills.js` - update softskills here
 
 ## GitHub Pages Deployment
 

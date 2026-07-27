@@ -144,7 +144,7 @@ html {
     font-weight: 800;
     margin-bottom: 1.8rem;
     position: relative;
-    display: inline-block
+    display: inline-block;
 }
 
 .section-title::after {
@@ -152,10 +152,17 @@ html {
     position: absolute;
     left: 0;
     bottom: -.6rem;
-    width: 65%;
+
+    width: clamp(4rem, 8vw, 6rem);
+
     height: .25rem;
     border-radius: 999px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary))
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
 }
 
 .card-custom {
@@ -175,6 +182,97 @@ html {
     box-shadow: 0 8px 25px rgba(15, 23, 42, .04)
 }
 
+/* Start of Soft Skill Design */
+.strength-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    padding: 2rem 1.5rem;
+
+    text-align: center;
+
+    height: 100%;
+
+    transition: all .3s ease;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, .05);
+}
+
+.strength-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #c7d2fe;
+
+    box-shadow: 0 20px 40px rgba(79, 70, 229, .12);
+}
+
+.strength-icon {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: rgba(79, 70, 229, .08);
+}
+
+.strength-icon i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.strength-card h4 {
+    color: var(--dark);
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    margin-bottom: 1rem;
+}
+
+.strength-card p {
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+.strengths-title {
+    /* display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--primary);
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em; */
+    
+    font-weight: 800;
+    margin-bottom: 1.8rem;
+    position: relative;
+    display: inline-block
+}
+
+.title-dot {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+}
+/* End of Soft Skill Design */
 .timeline {
     position: relative;
     padding-left: 2rem
