@@ -1,7 +1,7 @@
 const softskills = [
 {   
     title: "Work Approach",
-    hidden: "false",
+    hidden: "true",
     itemDetails: [
         {
             hidden: "false",
