@@ -1,6 +1,6 @@
 const projects = [{
         id: "0",
-        title: "Simple SAP RAP Business Application with Freestyle SAPUi5",
+        title: "Simple SAP RAP Business Application with Freestyle SAPUI5",
         description: "Fullstack app using ABAP RESTful Application Programming Model, CDS, RAP BO for Backend, and Freestyle SAPUI5 for Frontend",
         desc_list: [
             "Manage Author and Books using RAP (preview mode only)", 
@@ -46,5 +46,26 @@ const projects = [{
             "https://raw.githubusercontent.com/AaronBolival/ajeb_portfolio/refs/heads/main/test.png" ,
             "https://raw.githubusercontent.com/AaronBolival/ajeb_portfolio/refs/heads/main/test.png"
         ]
+    },
+    {
+        id: "1",
+        title: "Simple SAP CAP with Freestyle SAPUI5 and Fiori List Report",
+        description: "Inprogress",
+        desc_list: [
+                ""
+        ],
+        notes: [ 
+                "Notes:",
+                "This is a personal app only developed to showcase my SAP CAP Application developement skills.",
+                "This app still has some issues, However, I plan to fix it once I have some free time."
+        ],
+        technologies: [ "CAP Node.js"],
+        platform_and_tools: [ "BTP Trial", "Business Application Studio" ],
+        icon: "bi-window-sidebar",
+        link: "#",     
+        images : [ 
+                ""
+        ]
     }
+                  
 ];
